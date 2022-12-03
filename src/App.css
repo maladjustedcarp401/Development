@@ -83,10 +83,6 @@ h1 {
 /* https://medium.com/codex/how-to-style-an-input-field-with-css-only-tips-and-techniques-e6a00e9dcc50 */
 .filter {
     border: none;
-    -webkit-appearance: none;
-    -ms-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
     background: #f2f2f2;
     padding: 6px;
     border-radius: 3px;
