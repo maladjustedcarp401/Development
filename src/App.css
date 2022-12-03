@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
+/* Add styling for your page here */
+
+h1 {
+    margin-left: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.appPane {
+    display: grid;
+    grid-template-columns: 33% 33% auto;
+    column-gap: 50px;
+    margin-left: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.pokemonPane {
+    width: 95%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+  
+.teamPane {
+    grid-column-start: 3;
+    grid-column-end: 4;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.id {
+    font-size: smaller;
+    color: rgb(201, 201, 201);
 }
 
-.App-link {
-  color: #61dafb;
+.name {
+    font-size: medium;
+    font-weight: bold;
+    text-transform: capitalize;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pokemonList {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    align-items: left;
+    color: white;
+    margin-top: 10px;
+}
+
+.teamList {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    margin-top: 10px; 
+    margin-left: 30%;
+}
+
+.teamPane h2 {
+ text-align: center;
+}
+
+.teamPane h4 {
+    text-align: center;
+}
+
+.outerPane {
+    display: flex;
+    flex-flow: column;
+}
+
+.pokemon {
+    border: rgb(255, 255, 255);
+    border-radius: 1px;
+    border-style: solid;
+    padding-bottom: 28px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+
+.inTeam {
+    border: rgb(0, 0, 0);
+    border-radius: 1px;
+    border-style: solid;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+
+/* https://medium.com/codex/how-to-style-an-input-field-with-css-only-tips-and-techniques-e6a00e9dcc50 */
+.filter {
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f2f2f2;
+    padding: 6px;
+    border-radius: 3px;
+    width: 200px;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+/* https://moderncss.dev/pure-css-custom-checkbox-style/ */
+.sort {
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+    margin-right: 10px;
+}
+
+.imgInTeam {
+    width: 40%;
 }
