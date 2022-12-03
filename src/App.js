@@ -42,14 +42,10 @@ function App() {
     let smolList = [...pokemon];
 
     if (checked) {
-      console.log("here1")
       smolList.sort((item1, item2) => item1.weight - item2.weight)
     } else if (checkedTwo) {
-      console.log("here2")
       smolList.sort((item1, item2) => item2.weight - item1.weight)
     }
-    
-    console.log(smolList)
   
     if (filterOneText !== "") {
       smolList = smolList.filter((item) => item.types.includes(filterOneText.toLowerCase()))
@@ -63,8 +59,6 @@ function App() {
     if (displayList.length > 50) {
       displayList = displayList.slice(0, 50);
     }
-
-    console.log(displayList)
 
     setFinalList(displayList);
 
