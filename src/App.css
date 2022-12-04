@@ -58,6 +58,15 @@ h1 {
     text-align: center;
 }
 
+.teamPane button {
+    text-align: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
 .outerPane {
     display: flex;
     flex-flow: column;

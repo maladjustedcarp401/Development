@@ -131,6 +131,10 @@ function App() {
       <div className="teamPane">
         <h2>Your Team!</h2>
         <h4>{weight} Total lbs!</h4>
+        <br/>
+        <div class="center">
+          <button onClick={() => {setTeamList([])}}>Clear Team</button>
+        </div>
 
         <div className="teamList">
             {teamList.map((item, index) => {
